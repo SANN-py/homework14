@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Decol&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #eceaea;
+  font-family: "Kaisei Decol";
+  margin: 10px;
+}
+.navbar {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 10px;
+}
+.logo {
+  width: 300px;
+  height: auto;
+}
+.navbar ul {
+  display: flex;
+  gap: 20px;
+}
+.navbar li {
+  list-style: none;
+}
+.hamburger-nav {
+  display: none;
+  color: #000;
+  cursor: pointer;
+}
+
+.navb {
+  position: fixed;
+  display: none;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(29, 29, 79);
+  padding: 10px 0;
+  justify-content: space-around;
+}
+.navb a {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+/* responsive */
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none;
+  }
+  .hamburger-nav {
+    display: flex;
+  }
+  .navb {
+    display: flex;
+  }
+}
